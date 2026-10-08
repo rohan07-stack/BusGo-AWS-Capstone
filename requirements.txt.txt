@@ -1,0 +1,5 @@
+# BusGo AWS Capstone
+
+# AWS Lambda provides boto3 in its managed Python runtime.
+
+# uuid and json are part of Python's standard library.
