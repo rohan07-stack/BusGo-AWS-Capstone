@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b2d">
+  <title>BusGo — Travel, beautifully simple</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> Your next journey starts here <span class="announcement-divider">·</span> Simple booking, smoother travel</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="BusGo home"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V6.8C5 4.7 6.8 3.5 12 3.5s7 1.2 7 3.3V16M5 10h14M7 16v2.2M17 16v2.2M7 20h.01M17 20h.01M5 16h14a2 2 0 0 1 2 2v.5H3V18a2 2 0 0 1 2-2Z"/></svg></span><span>busgo<span class="brand-period">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="#home">Home</a><a href="#search">Find a bus</a><a href="#routes">Popular routes</a><a href="#how">How it works</a></nav>
+    <a class="header-cta" href="#search">Plan your trip <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg-shape shape-one"></div><div class="hero-bg-shape shape-two"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-icon">✦</span> THE BETTER WAY TO GET THERE</div>
+        <h1>Good journeys.<br><span>Great stories.</span></h1>
+        <p class="hero-copy">Find your ride, pick your seat, and leave the travel planning to us. Your next adventure is just a few clicks away.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#search">Find your bus <span>→</span></a><a class="text-link" href="#how"><span class="play-icon">▶</span> How it works</a></div>
+        <div class="trust-row"><div class="avatar-stack"><span>R</span><span>A</span><span>S</span><span>+</span></div><div><strong>A smoother way to travel</strong><small>Designed around your journey</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a bus travelling through hills">
+        <div class="sun"></div><div class="visual-cloud cloud-a"></div><div class="visual-cloud cloud-b"></div>
+        <svg class="landscape" viewBox="0 0 620 460" role="img" aria-label="Stylized mountain landscape with a bus">
+          <path d="M0 245 105 120l77 84 98-136 118 154 77-72 145 121v189H0Z" fill="#d7e8df"/>
+          <path d="m0 285 113-93 89 76 120-124 109 120 78-65 111 75v181H0Z" fill="#a8cfc1"/>
+          <path d="M0 343q105-80 213-18t205 1 202 2v127H0Z" fill="#659c87"/>
+          <path d="M0 382q110-44 225-7t207-3 188 2v79H0Z" fill="#3d7869"/>
+          <path d="M30 460q110-90 210-12t200-2 180 0" fill="none" stroke="#f7f1e6" stroke-width="4" stroke-dasharray="10 13" opacity=".75"/>
+          <g transform="translate(145 236) rotate(-3)">
+            <ellipse cx="171" cy="157" rx="176" ry="18" fill="#16382f" opacity=".18"/>
+            <rect x="28" y="42" width="286" height="103" rx="20" fill="#fffaf0"/>
+            <path d="M47 42h211a18 18 0 0 1 18 18v35H47Z" fill="#f4a93b"/>
+            <rect x="61" y="54" width="62" height="31" rx="5" fill="#263d4c"/>
+            <rect x="132" y="54" width="62" height="31" rx="5" fill="#263d4c"/>
+            <rect x="203" y="54" width="56" height="31" rx="5" fill="#263d4c"/>
+            <rect x="274" y="61" width="24" height="53" rx="5" fill="#d8e4dd"/>
+            <rect x="42" y="103" width="221" height="7" rx="3.5" fill="#f4a93b"/>
+            <rect x="49" y="118" width="23" height="9" rx="4.5" fill="#f4a93b"/>
+            <rect x="277" y="118" width="23" height="9" rx="4.5" fill="#e67b56"/>
+            <circle cx="91" cy="145" r="25" fill="#233642"/><circle cx="91" cy="145" r="11" fill="#dce7e4"/>
+            <circle cx="258" cy="145" r="25" fill="#233642"/><circle cx="258" cy="145" r="11" fill="#dce7e4"/>
+            <text x="159" y="107" text-anchor="middle" font-family="Manrope, sans-serif" font-size="15" font-weight="800" fill="#263d4c">busgo.</text>
+          </g>
+        </svg>
+        <div class="floating-card rating-card"><span class="rating-star">★</span><div><strong>Made for comfort</strong><small>Every mile matters</small></div></div>
+        <div class="floating-card route-card"><span class="route-icon">↗</span><div><strong>Your route, your way</strong><small>From here to somewhere new</small></div></div>
+      </div>
+      <div class="hero-bottom"><span>THOUGHTFUL TRAVEL STARTS WITH A BETTER PLAN</span><span class="scroll-cue">SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="search-wrap" id="search">
+      <div class="search-intro"><span class="section-kicker">LET'S GET YOU THERE</span><h2>Where are you headed?</h2><p>Find a ride that fits your plans.</p></div>
+      <form class="search-panel" id="searchForm">
+        <div class="field field-city"><label for="from">FROM</label><div class="field-control"><span class="field-symbol">⌖</span><select id="from" required><option value="">Choose city</option><option>Pune</option><option>Mumbai</option><option>Nashik</option><option>Kolhapur</option><option>Nagpur</option><option>Goa</option></select></div></div>
+        <button class="swap-button" type="button" id="swapLocations" aria-label="Swap departure and destination">⇄</button>
+        <div class="field field-city"><label for="to">TO</label><div class="field-control"><span class="field-symbol">◎</span><select id="to" required><option value="">Choose city</option><option>Mumbai</option><option>Pune</option><option>Nashik</option><option>Kolhapur</option><option>Nagpur</option><option>Goa</option></select></div></div>
+        <div class="field"><label for="travelDate">TRAVEL DATE</label><div class="field-control"><span class="field-symbol">▦</span><input id="travelDate" type="date" required></div></div>
+        <button class="button button-search" type="submit">Search buses <span>→</span></button>
+      </form>
+      <p class="search-note"><span>✦</span> Flexible plans. Comfortable rides. A better way forward.</p>
+      <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="routes-section" id="routes">
+      <div class="section-heading"><div><span class="section-kicker">A LITTLE INSPIRATION</span><h2>Popular ways to go</h2><p>Some journeys just call your name.</p></div><span class="sample-label">DEMO ROUTES</span></div>
+      <div class="route-grid">
+        <article class="destination-card destination-pune"><div class="destination-art"><span class="destination-sun"></span><span class="destination-mountain"></span><span class="destination-building">⌂</span></div><div class="destination-info"><span class="route-label">WEEKEND FAVOURITE</span><h3>Pune <span>→</span> Mumbai</h3><div class="destination-meta"><span>Approx. 3.5 hrs</span><span>From <strong>₹650</strong></span></div><button class="route-select" data-from="Pune" data-to="Mumbai">Explore route <span>↗</span></button></div></article>
+        <article class="destination-card destination-goa"><div class="destination-art"><span class="destination-sun"></span><span class="palm palm-one">♣</span><span class="destination-wave"></span></div><div class="destination-info"><span class="route-label">COASTAL ESCAPE</span><h3>Pune <span>→</span> Goa</h3><div class="destination-meta"><span>Approx. 8 hrs</span><span>From <strong>₹1,100</strong></span></div><button class="route-select" data-from="Pune" data-to="Goa">Explore route <span>↗</span></button></div></article>
+        <article class="destination-card destination-nashik"><div class="destination-art"><span class="destination-sun"></span><span class="destination-hill"></span><span class="destination-vine">〰</span></div><div class="destination-info"><span class="route-label">EASY GETAWAY</span><h3>Mumbai <span>→</span> Nashik</h3><div class="destination-meta"><span>Approx. 4 hrs</span><span>From <strong>₹500</strong></span></div><button class="route-select" data-from="Mumbai" data-to="Nashik">Explore route <span>↗</span></button></div></article>
+      </div>
+      <p class="demo-disclaimer">Illustrative routes and fares for the frontend demo. Live availability and prices will come from the AWS backend.</p>
+    </section>
+
+    <section class="how-section" id="how"><div class="how-copy"><span class="section-kicker">NO COMPLICATED PLANS</span><h2>Three steps.<br><span>One great journey.</span></h2><p>We keep the booking process simple, so you can spend less time planning and more time looking forward to the trip.</p><a class="text-link dark-link" href="#search">Ready when you are <span>→</span></a></div><div class="steps"><article class="step"><div class="step-number">01</div><div><h3>Find your ride</h3><p>Enter your departure, destination, and travel date.</p></div><span class="step-icon">⌕</span></article><article class="step"><div class="step-number">02</div><div><h3>Choose your seat</h3><p>Compare the available services and choose the bus that suits your plans.</p></div><span class="step-icon">▦</span></article><article class="step"><div class="step-number">03</div><div><h3>Book with confidence</h3><p>Confirm passenger details and receive your booking reference.</p></div><span class="step-icon">✓</span></article></div></section>
+
+    <section class="cloud-banner"><div class="cloud-badge">☁</div><div><span class="section-kicker">BUILT AS AN AWS CAPSTONE</span><h2>A small idea, powered by the cloud.</h2><p>API Gateway routes requests to AWS Lambda, while DynamoDB stores booking records for the capstone demo.</p></div><div class="cloud-chips"><span>API Gateway</span><span>Lambda</span><span>DynamoDB</span></div></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V6.8C5 4.7 6.8 3.5 12 3.5s7 1.2 7 3.3V16M5 10h14M7 16v2.2M17 16v2.2M7 20h.01M17 20h.01M5 16h14a2 2 0 0 1 2 2v.5H3V18a2 2 0 0 1 2-2Z"/></svg></span><span>busgo<span class="brand-period">.</span></span></a><span>Thoughtful travel starts here.</span><span>© <span id="year"></span> BusGo · AWS Capstone Project</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
